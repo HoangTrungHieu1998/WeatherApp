@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    tools:context=".view.MainActivity">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:cursorVisible="false"
+            android:id="@+id/edtSearch"
+            android:hint="Enter your city name"
+            android:layout_width="330dp"
+            android:layout_height="50dp"/>
+        <ImageButton
+            android:layout_toEndOf="@id/edtSearch"
+            android:id="@+id/btnChoose"
+            android:background="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_loupe" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:id="@+id/txtCity"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:id="@+id/txtDescribe"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="60sp"
+        android:id="@+id/txtWeather"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:id="@+id/txtHumid"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#F4F4F4"
+        android:id="@+id/txtWind"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
